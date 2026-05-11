@@ -11,7 +11,6 @@
   "properties": {
     "hasSettingPage": true
   },
-  "dependency": "jimu-arcgis",
   "translatedLocales": [
     "en"
   ],
