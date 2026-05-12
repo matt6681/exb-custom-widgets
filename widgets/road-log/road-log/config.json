@@ -1,0 +1,87 @@
+{
+  "lrsServiceUrl": "https://roadsandhighwayssample.esri.com/server/rest/services/RoadsHighways/NewYorkRoads/MapServer/exts/LRServer",
+  "networkLayerId": 16,
+  "networkRouteIdField": "customroutefield",
+  "networkRouteNameField": "route_name",
+  "eventLayerConfigs": [
+    {
+      "layerId": 0,
+      "name": "Crash",
+      "type": "esriLRSPointEventLayer",
+      "attributes": ["accident_type", "collision_type", "weather", "crash_severity", "number_fatalities", "number_injuries", "road_surface_condition", "light_condition"],
+      "routeIdField": "routeid",
+      "measureField": "measure"
+    },
+    {
+      "layerId": 1,
+      "name": "Curve",
+      "type": "esriLRSLinearEventLayer",
+      "attributes": ["curve_classification"],
+      "routeIdField": "route_id",
+      "fromMeasureField": "from_measure",
+      "toMeasureField": "to_measure"
+    },
+    {
+      "layerId": 2,
+      "name": "Access Control",
+      "type": "esriLRSLinearEventLayer",
+      "attributes": ["access_control"],
+      "routeIdField": "route_id",
+      "fromMeasureField": "from_measure",
+      "toMeasureField": "to_measure"
+    },
+    {
+      "layerId": 3,
+      "name": "Functional Class",
+      "type": "esriLRSLinearEventLayer",
+      "attributes": ["functional_class"],
+      "routeIdField": "route_id",
+      "fromMeasureField": "from_measure",
+      "toMeasureField": "to_measure",
+      "domainOverrides": {
+        "functional_class": {
+          "1": "Rural Interstate",
+          "2": "Rural Principal Arterial",
+          "3": "Rural Minor Arterial",
+          "4": "Rural Major Collector",
+          "5": "Rural Minor Collector",
+          "6": "Rural Local",
+          "7": "Urban Interstate",
+          "8": "Urban Freeway/Expressway",
+          "9": "Urban Principal Arterial",
+          "10": "Urban Minor Arterial",
+          "11": "Urban Collector",
+          "12": "Urban Local"
+        }
+      }
+    },
+    {
+      "layerId": 4,
+      "name": "Grade",
+      "type": "esriLRSLinearEventLayer",
+      "attributes": ["grade_classification"],
+      "routeIdField": "route_id",
+      "fromMeasureField": "from_measure",
+      "toMeasureField": "to_measure"
+    },
+    {
+      "layerId": 5,
+      "name": "Median Type",
+      "type": "esriLRSLinearEventLayer",
+      "attributes": ["median_type"],
+      "routeIdField": "route_id",
+      "fromMeasureField": "from_measure",
+      "toMeasureField": "to_measure"
+    },
+    {
+      "layerId": 10,
+      "name": "Speed Limit",
+      "type": "esriLRSLinearEventLayer",
+      "attributes": ["speed_limit"],
+      "routeIdField": "route_id",
+      "fromMeasureField": "from_measure",
+      "toMeasureField": "to_measure"
+    }
+  ],
+  "measurePrecision": 3
+}
