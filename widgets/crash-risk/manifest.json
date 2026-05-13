@@ -1,0 +1,21 @@
+{
+  "name": "crash-risk",
+  "label": "Crash Risk Prediction",
+  "type": "widget",
+  "version": "1.18.0",
+  "exbVersion": "1.18.0",
+  "author": "Matt",
+  "description": "AI and ML crash risk prediction using LRS event data and NY State crash database.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasSettingPage": true
+  },
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 420,
+    "height": 560
+  }
+}
